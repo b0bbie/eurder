@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping (path = "/customers")
+@RequestMapping (path = "customers")
 public class CustomerController {
     private CustomerService customerService;
     private CustomerMapper customerMapper;
@@ -28,6 +28,7 @@ public class CustomerController {
                 createCustomerDto.getLastName(), createCustomerDto.getEmailAddress(), createCustomerDto.getAddress(),
                 createCustomerDto.getPhoneNumber())));
     }
+
     @GetMapping(produces = "application/json")
     @ResponseStatus(HttpStatus.OK)
     public List<CustomerDto> getAllCustomers() {
@@ -35,6 +36,10 @@ public class CustomerController {
                 .map(customer -> customerMapper.mapToCustomerDto(customer))
                 .collect(Collectors.toList());
     }
-    
 
+    @GetMapping(path = "/{id}", produces = "application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public CustomerDto getCustomerById(@PathVariable String id) {
+        return customerMapper.mapToCustomerDto(customerService.getCustomerById(id));
+    }
 }
