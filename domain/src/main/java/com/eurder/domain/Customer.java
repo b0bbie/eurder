@@ -1,6 +1,10 @@
+package com.eurder.domain;
+
+import java.util.UUID;
 
 public class Customer {
 
+    private String id;
     private String firstName;
     private String lastName;
     private String emailAddress;
@@ -8,11 +12,20 @@ public class Customer {
     private int phoneNumber;
 
     public Customer(String firstName, String lastName, String emailAddress, String address, int phoneNumber) {
+        this.id = UUID.randomUUID().toString();
         this.firstName = firstName;
         this.lastName = lastName;
         this.emailAddress = emailAddress;
         this.address = address;
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getFirstName() {

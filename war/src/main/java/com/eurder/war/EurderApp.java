@@ -1,0 +1,9 @@
+package com.eurder.war;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication (scanBasePackages = "com.eurder")
+public class EurderApp {
+    public static void main(String[] args) {
+    }
+}

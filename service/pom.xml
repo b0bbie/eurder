@@ -10,6 +10,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service</artifactId>
+    <packaging>pom</packaging>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.eurder</groupId>
+            <artifactId>domain</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
