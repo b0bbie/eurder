@@ -1,7 +1,6 @@
-package com.eurder.api;
+package com.eurder.api.customer;
 
 public class CustomerDto {
-
     private String id;
     private String firstName;
     private String lastName;

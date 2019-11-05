@@ -1,4 +1,4 @@
-package com.eurder.api;
+package com.eurder.api.customer;
 
 public class CreateCustomerDto {
     private String firstName;

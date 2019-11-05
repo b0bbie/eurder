@@ -23,11 +23,6 @@ public class Customer {
     public String getId() {
         return id;
     }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public String getFirstName() {
         return firstName;
     }
@@ -46,6 +41,10 @@ public class Customer {
 
     public int getPhoneNumber() {
         return phoneNumber;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setFirstName(String firstName) {
