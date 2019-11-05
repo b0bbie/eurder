@@ -1,7 +1,7 @@
-package com.eurder.service;
+package com.eurder.service.customer;
 
-import com.eurder.domain.Customer;
-import com.eurder.domain.CustomerRepository;
+import com.eurder.domain.customer.Customer;
+import com.eurder.domain.customer.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

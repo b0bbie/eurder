@@ -1,4 +1,4 @@
-package com.eurder.domain;
+package com.eurder.domain.customer;
 
 import org.springframework.stereotype.Component;
 
@@ -8,7 +8,6 @@ import java.util.Map;
 
 @Component
 public class CustomerRepository {
-
     private Map<String, Customer> customerRepository = new HashMap<>();
 
     public Collection<Customer> getAllCustomers() {

@@ -1,6 +1,6 @@
 package com.eurder.api.customer;
 
-import com.eurder.domain.Customer;
+import com.eurder.domain.customer.Customer;
 import org.springframework.stereotype.Component;
 
 @Component

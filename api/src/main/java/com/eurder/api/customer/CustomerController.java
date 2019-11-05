@@ -1,7 +1,7 @@
 package com.eurder.api.customer;
 
-import com.eurder.domain.Customer;
-import com.eurder.service.CustomerService;
+import com.eurder.domain.customer.Customer;
+import com.eurder.service.customer.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

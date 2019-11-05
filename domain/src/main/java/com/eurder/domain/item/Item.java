@@ -1,4 +1,4 @@
-package com.eurder.domain;
+package com.eurder.domain.item;
 
 import java.util.UUID;
 

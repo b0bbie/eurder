@@ -1,9 +1,8 @@
-package com.eurder.domain;
+package com.eurder.domain.customer;
 
 import java.util.UUID;
 
 public class Customer {
-
     private String id;
     private String firstName;
     private String lastName;

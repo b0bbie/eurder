@@ -1,7 +1,7 @@
 package com.eurder.api.item;
 
-import com.eurder.domain.Item;
-import com.eurder.service.ItemService;
+import com.eurder.domain.item.Item;
+import com.eurder.service.item.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

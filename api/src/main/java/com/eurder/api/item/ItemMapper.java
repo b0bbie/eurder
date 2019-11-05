@@ -1,5 +1,5 @@
 package com.eurder.api.item;
-import com.eurder.domain.Item;
+import com.eurder.domain.item.Item;
 import org.springframework.stereotype.Component;
 
 @Component
