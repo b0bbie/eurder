@@ -6,6 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @RestController
 @RequestMapping (path = "/customers")
 public class CustomerController {
@@ -25,5 +28,13 @@ public class CustomerController {
                 createCustomerDto.getLastName(), createCustomerDto.getEmailAddress(), createCustomerDto.getAddress(),
                 createCustomerDto.getPhoneNumber())));
     }
+    @GetMapping(produces = "application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public List<CustomerDto> getAllCustomers() {
+        return customerService.getAllCustomers().stream()
+                .map(customer -> customerMapper.mapToCustomerDto(customer))
+                .collect(Collectors.toList());
+    }
+    
 
 }

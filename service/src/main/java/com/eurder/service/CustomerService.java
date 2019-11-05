@@ -22,11 +22,5 @@ public class CustomerService {
     public Customer saveCustomer(Customer customer){
         return customerRepository.saveCustomer(customer);
     }
-
-//    public Customer createCustomer (CreateCustomerDto){
-
-//        public Professor createProfessor(CreateProfessorDto createProfessorDto) {
-//            return new Professor(createProfessorDto.getFirstName(), createProfessorDto.getLastName());
-//        }
     }
 
